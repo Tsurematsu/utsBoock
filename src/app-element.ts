@@ -21,6 +21,7 @@ export class appElement extends LitElement {
 
   onChangeInput(){
     this.panelLoading.setAttribute('open', '');
+    this.panelLoaded.removeAttribute('open');
     const files = this.fileInput.files;
     const file = files[0];
     if (!file) return;
@@ -100,19 +101,19 @@ export class appElement extends LitElement {
   }
 }
 
-function test_Materia(horaInicio) {
-  const inicio = new Date()
-  inicio.setHours(horaInicio, 30, 0)
-  const fin = new Date()
-  fin.setHours(inicio.getHours() + 3, 30, 0)
-  return {
-    materia: 'Materia test',
-    grupo: 'X123',
-    salon: '123 A',
-    inicio: inicio,
-    fin: fin
-  }
-}
+// function test_Materia(horaInicio) {
+//   const inicio = new Date()
+//   inicio.setHours(horaInicio, 30, 0)
+//   const fin = new Date()
+//   fin.setHours(inicio.getHours() + 3, 30, 0)
+//   return {
+//     materia: 'Materia test',
+//     grupo: 'X123',
+//     salon: '123 A',
+//     inicio: inicio,
+//     fin: fin
+//   }
+// }
 
 function getNowH(){
   let horarioEstudiante = JSON.parse(localStorage.getItem("horarioEstudiante"));
