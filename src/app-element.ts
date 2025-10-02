@@ -53,7 +53,7 @@ export class appElement extends LitElement {
      <div class="app">
       <div class="content">
         <div class="header">
-          <img width='50px' src="/public/iconUTS.jpg" alt="">
+          <img width='50px' src="/iconUTS.jpg" alt="">
           <span>:Boock</span>
         </div>
         <div class="listaMaterias">
@@ -69,7 +69,7 @@ export class appElement extends LitElement {
       <div class="downBar">
         <div class="intoBar">
             <div @click=${this.updateCalendar} class='icon'>
-              <img src="/public/calendario-mensual (1).png" alt="">
+              <img src="/calendario-mensual (1).png" alt="">
               <input 
                 type="file" 
                 id="fileInput" 
@@ -83,14 +83,14 @@ export class appElement extends LitElement {
 
     <div id='panelLoading' class='loading'>
       <div class='panel'>
-        <img src="/public/search.gif" alt="">
+        <img src="/search.gif" alt="">
         <span>Analizando Archivo...</span>
       </div>
     </div>
 
     <div id='panelLoaded' class='loaded'>
       <div class='panel'>
-        <img src="/public/check.gif" alt="">
+        <img src="/check.gif" alt="">
         <br>
         <br>
         <span>Calendario Analizado!!</span>

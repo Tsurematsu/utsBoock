@@ -1,5 +1,5 @@
 import { getDocument, GlobalWorkerOptions, type PDFDocumentProxy } from 'pdfjs-dist';
-GlobalWorkerOptions.workerSrc = '/public/pdfjs-dist/pdf.worker.min.mjs'
+GlobalWorkerOptions.workerSrc = '/pdfjs-dist/pdf.worker.min.mjs'
 export default async function schedule(file, ifBuffet = false) {
   const loadingTask = ifBuffet ? getDocument({ data: file }) : getDocument(file);
   const pdf: PDFDocumentProxy = await loadingTask.promise;

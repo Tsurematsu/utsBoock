@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UTS:Boock 📑</title>
-    <link rel="shortcut icon" href="/public/graduacion.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/graduacion.png" type="image/x-icon">
     <link rel="stylesheet" href="./index.css" />
-    <link rel="manifest" href="/public/manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <script type="module" src="./src/app-element.ts"></script>
   </head>
   <body>
     <app-element></app-element>
-    <script> if ("serviceWorker" in navigator) navigator.serviceWorker.register("/public/sw.js").then(reg => {}).catch(err => console.error("❌ Error al registrar SW:", err)); </script>
+    <script> if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").then(reg => {}).catch(err => console.error("❌ Error al registrar SW:", err)); </script>
   </body>
 </html>
