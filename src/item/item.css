@@ -1,0 +1,101 @@
+.item{
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftInfo{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 100px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+.materia{
+    width: 100%;
+    font-size: large;
+    align-content: center;
+}
+
+.item1{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 100%;
+    background-color: rgb(175, 181, 255);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+
+.right{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    background-color: rgb(120, 129, 255);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-size: x-large;
+}
+
+.rango{
+    margin: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(199, 243, 173);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    span{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+    .init{
+        background-color: rgb(255, 212, 177);
+    }
+    .end{
+         background-color: rgb(255, 190, 137);
+    }
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    span{
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.hidden{
+    display: none;
+}
